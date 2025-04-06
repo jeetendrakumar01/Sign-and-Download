@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <style>
+.canvas{
+        border : 2px solid black
+       }
+.top,.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.Background, select ,button ,input ,.color {
+    width: 80%;
+}
+
+.whole{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+
+.top{
+    margin: 10px;
+}
+.bottom>button{
+    margin: 10px;
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="whole">
+        <div class="top">
+            <div class="color">
+                <p>Text Color Picker</p>
+                <input type="color" class="color-picker" id="ColorPicker"/>
+            </div>
+            <div class="Background">
+                 <p>Background</p>
+                 <input type="color"
+                 class="background"
+                 id="canva" />
+            </div>
+            <div class="Background">
+                 <p>Font Size</p>
+                    <select class="fontSize" id="fontSize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                    <option value="20">20px</option>
+                    <option value="25">30px</option>
+        </select>
+            </div>
+        </div>
+        <canvas class="canvas" id="myCanva" height="500" width="800"/>
+</canvas>
+<div class="bottom">
+    <button type="button" class="btn btn-warning" id="clear">Clear</button>
+    <button type="button" class="btn btn-success" id="clearr">Save & Download</button>
+    <button type="button" class="btn btn-danger"   id="clearrr">Retrieve Data</button>
+
+</div>
+</div>
+<script src="sign.js"></script>
+</body>
+</html>
