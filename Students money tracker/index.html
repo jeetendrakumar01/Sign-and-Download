@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Money Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pocket Money Tracker 💰</h1>
+
+    
+    <div id="balance-section">
+      <h2>Your Balance: ₹<span id="balance">0</span></h2>
+      <div class="summary">
+        <div>
+          <h3>Income</h3>
+          <p>₹<span id="income">0</span></p>
+        </div>
+        <div>
+          <h3>Expenses</h3>
+          <p>₹<span id="expense">0</span></p>
+        </div>
+      </div>
+    </div>
+
+   
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Enter description..." required>
+      <input type="number" id="amount" placeholder="Enter amount..." required>
+      <select id="transaction-type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+
+   
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
