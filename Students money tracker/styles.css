@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Body styling */
+  
   body {
     background-color: #f4f4f4;
     color: #333;
@@ -14,7 +14,7 @@
     padding: 20px;
   }
   
-  /* Container styling */
+ 
   .container {
     max-width: 600px;
     margin: 0 auto;
@@ -24,13 +24,13 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Heading styling */
+  
   h1 {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  /* Balance section styling */
+  
   #balance-section {
     margin-bottom: 20px;
   }

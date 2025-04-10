@@ -116,19 +116,19 @@
   <h1>🧠 Smart Productivity Dashboard</h1>
   <button id="themeToggle" onclick="toggleTheme()">🌗 welcome users</button>
   <div class="grid">
-    <!-- Greeting Section -->
+    
     <div class="card">
       <h2>👋 Greeting</h2>
       <div id="greeting">Hello!</div>
     </div>
 
-    <!-- Digital Clock -->
+    
     <div class="card">
       <h2>⏰ Current Time</h2>
       <div id="clock">--:--:--</div>
     </div>
 
-    <!-- Typing Speed Test -->
+    
     <div class="card">
       <h2>⌨️ Typing Speed Test</h2>
       <div class="quote-box" id="quote"></div>
@@ -136,7 +136,7 @@
       <div id="typingResult"></div>
     </div>
 
-    <!-- Weather Info -->
+    
     <div class="card">
       <h2>🌤️ Weather Info</h2>
       <input type="text" id="city" placeholder="Enter city name" />
@@ -144,7 +144,7 @@
       <div id="weatherOutput"></div>
     </div>
 
-    <!-- To-Do List -->
+    
     <div class="card">
       <h2>✅ To-Do List</h2>
       <input type="text" id="todoInput" placeholder="Enter task" />
@@ -154,7 +154,7 @@
   </div>
 
   <script>
-    // Digital Clock
+    
     function updateClock() {
       const now = new Date();
       const time = now.toLocaleTimeString();
@@ -163,7 +163,7 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    // Greeting Message
+   
     function updateGreeting() {
       const hour = new Date().getHours();
       let greetingText = 'Hello';
@@ -174,7 +174,7 @@
     }
     updateGreeting();
 
-    // Typing Speed Test
+    
     const sentences = [
       "Debugging is part of every developer's journey.",
       "JavaScript powers interactive websites.",
@@ -206,7 +206,7 @@
     });
     setSentence();
 
-    // Weather Info
+    
     async function getWeather() {
       const city = document.getElementById('city').value;
       const API_KEY = '9187b70b9efd013e8deb6682d131c973';
@@ -224,7 +224,7 @@
       }
     }
 
-    // To-do List with Edit and Delete
+    
     function addTodo() {
       const input = document.getElementById('todoInput');
       const task = input.value.trim();
